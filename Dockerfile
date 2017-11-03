@@ -23,4 +23,4 @@ RUN \
 EXPOSE 1935
 VOLUME /config /downloads
 
-CMD ["/bin/bash", "get_iplayer_web_pvr"] 
+CMD ["/bin/bash", "get_iplayer_web_pvr --listen 0.0.0.0 --output="/downloads""] 
