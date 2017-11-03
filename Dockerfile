@@ -16,9 +16,6 @@ RUN \
 	/var/lib/apt/lists/* \
 	/var/tmp/*
 
-# add local files
-COPY root/ /
-
 # ports and volumes
 EXPOSE 1935
 VOLUME /config /downloads
