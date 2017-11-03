@@ -1,9 +1,12 @@
 FROM lsiobase/xenial
 MAINTAINER Poag
 
-#Setup
-RUN add-apt-repository ppa:jon-hedgerows/get-iplayer
-  
+#Setup Repos
+RUN \
+	apt update && \
+	apt-get install -y software-properties-common python-software-properties && \
+	add-apt-repository ppa:jon-hedgerows/get-iplayer
+
 # install packages
 RUN \
  apt-get update && \
