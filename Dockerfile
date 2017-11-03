@@ -23,4 +23,6 @@ RUN \
 EXPOSE 1935
 VOLUME /config /downloads
 
+COPY root/ /root/
+
 CMD ["/bin/bash", "/root/start.sh"] 
