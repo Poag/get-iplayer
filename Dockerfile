@@ -21,7 +21,7 @@ RUN \
 
 # ports and volumes
 EXPOSE 1935
-VOLUME /config /downloads
+VOLUME /config /data
 
 COPY root/ /root/
 
