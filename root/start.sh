@@ -53,7 +53,8 @@ do
 
 			echo "[info] Copy succesful, deleting incoomplete folders..."
 			rm -rf "/data/get_iplayer/incomplete"/*
-
+			chown 99:100 -R "/data/completed/"
+			chmod 755 -R "/data/completed/"
 		else
 
 			echo "[error] Copy failed, skipping deletion of show folders in incoomplete folder..."
