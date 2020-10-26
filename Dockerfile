@@ -5,7 +5,7 @@ MAINTAINER Poag
 RUN \
 	apt update && \
 	apt-get install -y software-properties-common python-software-properties && \
-	add-apt-repository ppa:jon-hedgerows/get-iplayer
+	add-apt-repository ppa:m-grant-prg/utils
 
 # install packages
 RUN \
