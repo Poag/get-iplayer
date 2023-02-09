@@ -38,7 +38,7 @@ do
 
 		echo "[info] Running get_iplayer..."
 		# run get_iplayer for show, saving to incomplete folder
-                /usr/bin/get_iplayer --profile-dir /config --get --nopurge --modes="tvbest" --file-prefix="<name> - <senum> - <episodeshort>" "${show_name}" --output "/data/get_iplayer/incomplete/"
+                /usr/bin/get_iplayer --profile-dir /config --get --nopurge --quality="tvbest" --file-prefix="<name> - <senum> - <episodeshort>" "${show_name}" --output "/data/get_iplayer/incomplete/"
 	done
 
 	# check incomplete folder DOES contain files with mp4 extension
